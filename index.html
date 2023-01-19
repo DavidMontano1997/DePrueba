@@ -18,7 +18,6 @@
 <body>
 
     <script>
-
          // impuesto
         const IVA  = precio => {
             let itbm = (precio * 7) /100;
@@ -31,19 +30,20 @@
             return precio - montoDescuento;
         };  
 
-
         const valorTotal = (monto) => {
             let montoTotal = monto;
             return descuento(IVA(montoTotal));
         };
 
-        const monto     = Number(prompt("¿Valor total?"));
-        const valorNeto = valorTotal(monto);
+        // const monto     = Number(prompt("¿Valor total?"));
+        // const valorNeto = valorTotal(monto);
 
-        console.log(valorNeto);
+        // console.log(valorNeto);
 
+        const mi_object = { a: 1, b:1 };
+        const coincidencia = Object.keys(mi_object).some(key => key === "c");
 
-
+        console.log(coincidencia);
     </script>
 
     <!-- header -->
