@@ -16,6 +16,34 @@
 </head>
 
 <body>
+
+    <script>
+        const monto = 3.50;
+
+         // impuesto
+        const IVA  = precio => {
+            let itbm = (precio * 7) /100;
+            return precio + itbm;
+        };  
+
+        // descuento
+        const descuento = precio => {
+            let montoDescuento = (precio * 20) / 100;
+            return precio - montoDescuento;
+        };  
+
+
+        const valorTotal = (monto) => {
+            let montoTotal = monto;
+            return descuento(IVA(montoTotal));
+        };
+
+        console.log(valorTotal(monto));
+
+
+
+    </script>
+
     <!-- header -->
     <div id="header-container">
         <div class="container">
