@@ -18,7 +18,6 @@
 <body>
 
     <script>
-        const monto = 3.50;
 
          // impuesto
         const IVA  = precio => {
@@ -38,7 +37,10 @@
             return descuento(IVA(montoTotal));
         };
 
-        console.log(valorTotal(monto));
+        const monto     = Number(prompt("¿Valor total?"));
+        const valorNeto = valorTotal(monto);
+
+        console.log(valorNeto);
 
 
 
