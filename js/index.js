@@ -24,4 +24,26 @@ document.addEventListener("DOMContentLoaded",() => {
 
         $OBJ_formulary.collecting_information(e); // Validando formulario.
     });
+
+    // eliminar
+    const CookieInfo = cookie(confirm("¿Permiso para almacenar cookies?"));
+
+    function cookie(permisoCookie){
+        if(permisoCookie){
+            let { userAgent, language, appVersion } = navigator;
+
+            return {
+                day          : new Date(),
+                infoNavigator: userAgent,
+                language     : language,
+                version      : appVersion,
+                mode         : "light" 
+            }
+        } else {
+            return permisoCookie;
+        }
+    };
+
+    console.log(CookieInfo);
+
 });
