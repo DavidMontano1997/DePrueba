@@ -16,36 +16,6 @@
 </head>
 
 <body>
-
-    <script>
-
-         // impuesto
-        const IVA  = precio => {
-            let itbm = (precio * 7) /100;
-            return precio + itbm;
-        };  
-
-        // descuento
-        const descuento = precio => {
-            let montoDescuento = (precio * 20) / 100;
-            return precio - montoDescuento;
-        };  
-
-
-        const valorTotal = (monto) => {
-            let montoTotal = monto;
-            return descuento(IVA(montoTotal));
-        };
-
-        const monto     = Number(prompt("¿Valor total?"));
-        const valorNeto = valorTotal(monto);
-
-        console.log(valorNeto);
-
-
-
-    </script>
-
     <!-- header -->
     <div id="header-container">
         <div class="container">
