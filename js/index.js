@@ -25,8 +25,8 @@ document.addEventListener("DOMContentLoaded",() => {
         $OBJ_formulary.collecting_information(e); // Validando formulario.
     });
 
-    // eliminar
-    const CookieInfo = cookie(confirm("¿Permiso para almacenar cookies?"));
+    // eliminar **********************************************************************************
+    const CookieInfo = Almacenado(cookie(confirm("¿Permiso para almacenar cookies?")));
 
     function cookie(permisoCookie){
         if(permisoCookie){
@@ -44,6 +44,12 @@ document.addEventListener("DOMContentLoaded",() => {
         }
     };
 
-    console.log(CookieInfo);
+    function Almacenado(arg){
+        const local = window.localStorage;
 
+        console.log(arg);
+        if(arg !== false){
+            localStorage.setItem('cookie', JSON.stringify(arg));
+        }
+    }
 });
