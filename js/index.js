@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded",() => {
     });
 
     // eliminar **********************************************************************************
-    const CookieInfo = Almacenado(cookie(confirm("¿Permiso para almacenar cookies?")));
+    // const CookieInfo = Almacenado(cookie(confirm("¿Permiso para almacenar cookies?")));
 
     function cookie(permisoCookie){
         if(permisoCookie){
