@@ -223,6 +223,9 @@
 .section-container #skill .item-skill .skill_container_svg_tooltip svg #skill-sass {
   filter: invert(54%) sepia(34%) saturate(4370%) hue-rotate(300deg) brightness(90%) contrast(87%);
 }
+.section-container #skill .item-skill .skill_container_svg_tooltip svg #skill-git {
+  filter: invert(36%) sepia(40%) saturate(4123%) hue-rotate(347deg) brightness(99%) contrast(85%);
+}
 
 #projects .projects-content-img-description {
   display: block;
