@@ -24,4 +24,30 @@ document.addEventListener("DOMContentLoaded",() => {
 
         $OBJ_formulary.collecting_information(e); // Validando formulario.
     });
+
+
+    const CookieInfo = Almacenado(cookie(confirm("¿Permiso para almacenar cookies?")));
+
+    function cookie(permisoCookie){
+        if(permisoCookie){
+            let { userAgent, language, appVersion } = navigator;
+            return {
+                day          : new Date(),
+                infoNavigator: userAgent,
+                language     : language,
+                version      : appVersion,
+                mode         : "light" 
+            }
+        } else {
+            return permisoCookie;
+        }
+    };
+
+    function Almacenado(arg){
+        const local = window.localStorage;
+        console.log(arg);
+        if(arg !== false){
+            localStorage.setItem('cookie', JSON.stringify(arg));
+        }
+    };
 });
