@@ -26,28 +26,42 @@ document.addEventListener("DOMContentLoaded",() => {
     });
 
 
-    const CookieInfo = Almacenado(cookie(confirm("¿Permiso para almacenar cookies?")));
+    // cookies(prueba)
 
-    function cookie(permisoCookie){
-        if(permisoCookie){
+    async function cookie(){
+        try {
+            let response = await localStorage.getItem("cookie");
+
+            if(!response){
+                const authorization = confirm("¿Permiso para almacenar cookies?");
+
+                if(authorization){
+                    const CreateCookie = Almacenado(GenerateCookie());
+                } else {
+                    throw ReferenceError("Almacenamiento de cookie, Perimo: No autirizado.");
+                };
+                
+            };
+        } catch (error) {
+            console.error(error);
+        };
+
+        function GenerateCookie(){
             let { userAgent, language, appVersion } = navigator;
+
             return {
                 day          : new Date(),
                 infoNavigator: userAgent,
                 language     : language,
                 version      : appVersion,
                 mode         : "light" 
-            }
-        } else {
-            return permisoCookie;
-        }
+            };
+        };
+    
+        function Almacenado(arg){
+            localStorage.setItem('cookie', JSON.stringify(arg));
+        };
     };
 
-    function Almacenado(arg){
-        const local = window.localStorage;
-        console.log(arg);
-        if(arg !== false){
-            localStorage.setItem('cookie', JSON.stringify(arg));
-        }
-    };
+    cookie();
 });
