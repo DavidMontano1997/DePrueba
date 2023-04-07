@@ -1,6 +1,6 @@
 class  My_Project {
     Request_JSON(){
-        const URL = "js/proyectos.json";
+        const URL = "../resource/json/proyectos.json";
 
         fetch(URL)
             .then(response => response.ok == true ? response.json() : `Error ${response.status}: ${response.statusText}`)
@@ -25,7 +25,7 @@ class  My_Project {
             div.innerHTML = `
                 <div class="projects-content-img-description position-relative">
                     <figure>
-                        <img src="img/${image}" class="img-fluid mx-auto"alt=""><!-- Las imagenes deben tener unas dimensiones de 600x400 -->
+                        <img src="../resource/img/${image}" class="img-fluid mx-auto"alt=""><!-- Las imagenes deben tener unas dimensiones de 600x400 -->
             
                         <figcaption class="text-center position-absolute d-flex flex-column justify-content-center">
                             <div>
