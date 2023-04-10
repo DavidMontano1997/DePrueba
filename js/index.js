@@ -63,5 +63,5 @@ document.addEventListener("DOMContentLoaded",() => {
         };
     };
 
-    // cookie();
+    cookie();
 });
