@@ -1,2 +1,0 @@
-Este es un archivo nuevo para ser ignorado 
-#mensaje nuevo 02/08/23 = Hola canal, que tal vaz?
