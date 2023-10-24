@@ -24,6 +24,4 @@ document.addEventListener("DOMContentLoaded",() => {
 
         $OBJ_formulary.collecting_information(e); // Validando formulario.
     });
-
-    alert("Buen día patrón!!!!")
 });
