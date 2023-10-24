@@ -120,7 +120,7 @@ git branch --merge / --no-merge              = Muestra las ramas que han sido o 
 git branch -D nombreRama                     = Fuerza la eliminacion de una rama que no ha sido fusionada y se perderian los cambios de esta.
 git checkout -b nombreRama origin/nombreRama = Me crea una nueva rama la cual es copia y da seguimiennto a la rama remota.
 git branch -vv                               = Retorna infomracion de las ramas existentes ejemplo commits, numero de rama y la rama remota a 
-                                               la que le da seguimiento.
+                                               la que le da seguimiento. IMPORTANE! Hacer primero un git fetch --all para traer toda la informacion del servidor.
 git checkout --track origin/nombreRama       = Crea una rama local con el mismo nombre de la rama remota a la que dara seguimiento este comando 
                                                le da acceso a los comandos pull.
 
@@ -184,6 +184,17 @@ git checkout -b [rama] [nombreremoto]/[rama] = Crea una rama de seguimiento la c
                                                cambios que succedan en la rama remota, tiene acceso a las funcionalidades 
                                                de pull y fetch, push.
 
+
+$ git checkout --track [nombreremoto]/[rama] = Crea una nueva rama local que va hacer seguimiento a una rama remota.
+ git branch -u [nombreremoto]/[rama]         = Con este comando logamos cambiar la rama de seguimiento.
+
+ IMPORTANTE! = Tener en cuenta el nombre que le asignamos a la rama local. Ya que se succeden 2 casos en particular:
+
+                Caso 1. Al definir el mismo nombre de la rama remota a la rama local, podemos hacer pull y fetch sin expecificar
+                        de cual rama vamos a traer dicha informacion.
+
+                Caso 2. Al denfinir un nombre diferente a la rama local, debemos expecificarle a git de que repositirio y rama 
+                        remota vamos  ha taer dicha informacion.
 
 
 
