@@ -1,0 +1,197 @@
+davidMG_1997Dylan
+
+---- COMOANDOS DE CONSOLA ----
+ls = muestra todos los archivos de la localidad que me encuentro
+pwd = me muestra mi ubicacion(ruta)
+rm archivo = elimina el archivo expecificado
+cd carpeta = me tranporta a la carpeta expecificada
+cd .. = me de vuelve una carpeta atras
+mkdir = crea un nuevo directorio o carpeta
+ls - a  = me muestra las carpetas ocultas
+mv origen destino = lo utlizamos para cambiarle el nombre al archivo origen por destino
+
+----- COMANDOS GIT -----
+
+///////////////  CONFIGURACION ///////////////
+
+config --global user.name    = nombre de usuario/mostrar usuario
+config --global.email        = escribir email/mostrar email
+config --global core.editor  = define el editor de texto con el que trabajaremos (VSC, sublimeText e.c.t)
+config --global -e           = Muestra nuestra comfiguracion global en el editor de texto
+config --global core.atocrlf = define como git va a estandarizar los saltos de linea entre diferentes sismetas
+                               operativos ( windows, mac, linux) ya que estos tratan los saltos de linea de diferente 
+                               manera.
+git -h = me muestra configuracion general(resumen git)
+
+/////////////// ESTADO DE LOS DOCUMENTOS ///////////////
+
+git status                        = muestran los documentos que han sido modificados y preparados para ser confirmados
+git status -s / git status -short = muestran los documentos que han sido modificados y preparados
+                                    para ser confirmados en una versión más abreviada.
+
+///////////////  AÑADIR DOCUMENTOS A ETAPA STAGED ///////////////
+
+git add                   = me permite Añadir un documentos en especifico a la etapa staged.
+git add --all / git add . = Añade todos los documentos con cambios a la etapa staged.
+
+///////////////  CONFIRMAR CAMBIOS ///////////////
+
+git commit -m = lo usamos para enviar los cambios y darle un titulo  a esos cambios directamente en la consola.
+git commit -v = Me abre un documento en mi editor donde me muestra los archivos modificados y en donde puedo
+                escribir el mensaje del commit.
+git commit -a -m "..." = con este comando nos saltamos la etapa de preparación(git add) ya que git la agrega
+                        de forma automatica y vamos directo al commit.
+
+///////////////  ELIMINAR CAMBIOS  ///////////////
+
+git restore Nombrearchivo = lo utlizamos para eliminar cambios en los documentos que se encuentran en el area de trabajo.
+git restore --staged      = Lo utlizamos para cuando queremos sacar documentos que han sido pasados a la estapa de staged con git add Y los deja en la
+                            area de trabajo.
+
+///////////////  REVISAR LAS LINEAS QUE HAN SIDO EDITADAS EN LOS DOCUMENTOS ///////////////
+
+git diff          = me permite ver todas los cambios del archivo pero los cambios aun no pasan a la etapa staged.
+git diff --staged = me permite ver todas los cambios del los archivos que ya se encuetran en etapa staged.
+
+///////////////  ELIMINAR ARCHIVOS  ///////////////
+
+rm  archivoEliminar.html  = Se encarga de eliminar el archivo y todas sus modificaciones del area de trabajo y no agrega cambios a la  etapa staged.
+git rm archivoEliminar -f = Se encarga de eliminar el archivo cuando ya este esta en la etapa staged a un paso de ser commiquiado.
+git rm archivo.html       = Se encarga de eliminar archivos de nuestro diretorio de trabajo, una vez eliminado debemos confirmar los
+                            cambios.
+
+ ///////////////  REGISTRO DE LOS COMMITS  ///////////////
+
+git log           = me permite ver un historial de todos los commit echos y el autor de estos.
+git log --oneline = muestra un resumen del historial de los commit
+git log -p        = Se encarga de mostrarme los archivos(codigo fuente) que han sido modificados en cada commit.
+git log -2        = Se encarga de mostrarme las 2 ultimos commit.
+git log --stat    = Se encarga de mostrarme  un resumen (cantidad archivos modificados,lineas añadidas,lineas 
+                    eliminadas etc) en cada  commit.
+
+log > pretty > fulle, oneline, graph
+
+git log --pretty= oneline      = Me muestra el id completo junto con su mensjae por cada commit
+git log --pretty= fuller       = Me muestra informacion del autor y fecha en que fue echo cada commit,
+git log --name-status          = Me muestra los archivos y sus estados (modificados,elimanos y nuevos archivos)
+git log -- graph               = Muestra los commit y sus ramas.
+git log -<numero>=             = Muestra una cantidad de commits en base al numero que le pasemos.
+git log --since= fecha         = Muestra los commits apartir de la fecha registrada.
+git log --until= fecha         = Muestra los commits que se registraron antes de la fecha registrada
+git log --since= fecha --until = fecha                                                                = Muestra los commits que se registraron en un periodo determinado.
+git log --author= nombre       = Muestra todos los commits registrados por una persona en particular.
+git log --grep= palabra        = Permite filtar la lista por palabras claves en los mensajes de commits.
+git log -S= nombre             = Muestra sólo aquellas confirmaciones que añaden o eliminen código que corresponda con la cadena
+                                 especificada.
+
+///////////////  DESHACER COMMITS  ///////////////
+
+git commit --amend = Me permite editar el ultimo commit realizado, existen 2 posibles casos:
+                                     1-Si solamente quieres cambiar el mensaje y no haz modificado ningun archivo desde este ultimo commit, la foto que tomara 
+                                        git sera la misma y solo cambiara el mensaje 
+
+                                      2-Si por alguna razon modificastes archivo y su vez los quieres incluir en el ultimo commit, git tomara esos cambios juntos 
+                                        con los guardados por el commit y hara una sola confirmacion, en pocas palabras unira los cambios antiguos junto con los 
+                                        que acabas de hacer.
+
+///////////////  ELIMINAR CAMBIOS CONFIRMADOS  ///////////////
+
+ git reset HEAD nombreArchivo/hash del commit = Me de vuelve el archivo al estado del commit anterior, ya que se debe recordar que el puntero
+                                                HEAD siempre esta  apuntando al ultimo commit, por eso se le expecifica "reset HEAD".
+
+/////////////// RENOMBRAMIENTO DE ARCHIVOS ///////////////
+
+git mv archvioOriginal.html nuevoNombre.html = Se encarga de cambiar el nombre de un archivo, git es capaz de reconocer esta
+                                               acción como un renombramiento.
+
+/////////////// RAMAS ///////////////
+
+git branch                = muestra la rama en la que nos encontramos actualmente.
+gi checkout -b nombreRama = creamos una nueva rama IMPORTANTE! no deben a ver espacios en el nombre, 
+                            me cambia a la rama en un solo comando.
+
+git checkout nombreRama = Cambiamos a la rama que nombramos en el comando
+git merge nombreRama    = se trae los cambios  de "nombreRama" a la rama en la que nos encontremos actualmente, es
+                          importante tener en cuenta que al momento de hacer un merge debemos estar posicionados en 
+                          la rama en donde queremos que ver reflejados los cambios de la rama "nombreRama".
+
+git branch -v                                = ademas de mostrar el listado de ramas, enseña los utlimos commits de cada una.
+git branch --merge / --no-merge              = Muestra las ramas que han sido o no fusionadas.
+git branch -D nombreRama                     = Fuerza la eliminacion de una rama que no ha sido fusionada y se perderian los cambios de esta.
+git checkout -b nombreRama origin/nombreRama = Me crea una nueva rama la cual es copia y da seguimiennto a la rama remota.
+git branch -vv                               = Retorna infomracion de las ramas existentes ejemplo commits, numero de rama y la rama remota a 
+                                               la que le da seguimiento.
+git checkout --track origin/nombreRama       = Crea una rama local con el mismo nombre de la rama remota a la que dara seguimiento este comando 
+                                               le da acceso a los comandos pull.
+
+/////////////// VER CODIGO FUENTE DE UN ARCHIVO ///////////////
+
+cat nombreDocumento = vemos todo el codigo del documento.
+
+/////////////// REPOSITORIOS REMOTOS ///////////////
+
+git remote                = Muestra todos los remotos que tengo registrados o estan vinculados al proyecto.
+git remote -v             = Muestra las urls que estan registrandas en el proyecto.
+git remote add nombre url = Agrega repositorio con un nombre el cual servira como identificador asi evitamos 
+                            tener que estar escribiendo la url todo cada que se requiera enviar mis cambios al 
+                            repositorio.
+git fetch                                                         = Me retornar un informe con los posibles cambios existentes en el remopositorio remoto.
+git pull                                                          = Se trae todos los cambios o atualizaciones que haya sufrido el repositorio remoto y los 
+                                                                    fusiona con mi repositorio local.
+git pull --rebase origin rama                                     = Se trae todos los cambios del repositiorio remoto y los registra en mi repositorio local 
+                                                                    por de bajo de mis confirmaciones.
+git config pull.rebase true                                       = activa la fusion rebase
+git config pull.rebase false                                      = activa la fusion merge( por default de git)
+git remote show [nombre-remoto]                                   = Me retorna informacion sobre el repositorio remoto.
+git push [nombre-remoto] [nombre-rama-local]:[nombre-rama-remota] = Lo utilizamos para enviar cambios desde una rama local que hace seguimiento a una rama remota 
+                                                                    con un nombre diferente.
+git push [nombre-remoto] [nombre-rama]                            = Lo utlizamos para enviar todos nuestro commits a una rama determinada  en nuestro repositorio remoto
+git remote rename [nombre actual] [nuevo nombre]                  = Lo utlizamos para cambiar el nombre del repositorio remoto, tener en cuenta que al cambiar el  nombre 
+                                                                    de este tambien cambiaran las referecias a las ramas existentes.
+git remote rm [repositorio]                                       = Lo utlizamos para eliminar un repositorio remoto.
+
+/////////////// ETIQUETADOS ///////////////
+
+git tag                                        = Retorna el listado de las etiquetas existentes.
+git tag -l "patron de etiquieta ejem: v1.08.4" = Retorna un listado con todas las etiquetas que cumplan con
+                                                 ese patron.
+
+***Existen 2 tipos de etiqueado: 
+
+ligeras : Son versiones especificas del proyecto las cuales parecen un rama del mismo pero no tienen 
+          mayor relevancia
+
+anotadas : Son versiones especificas del proyecto. Pero estas si guardan informacion importante del usuario 
+           quien la creo, fecha, hora y ultimo commit echo ademas que estas etiquetas se guardan en la base de 
+           datos de git.
+
+git tag -a [ nombreVersion ] -m "mensaje" = Lo utlizamos para crear etiquetas anotadas el parametro -a es para el nombre de la verison y el -m para
+                                            un mensaje sobre la verison.
+git show [ version ] = Retorna informacion de la version (tag) .
+
+git tag [ version ] [ numero commit ]  = Nos sirve para crear un etiquetado ya sea ligero o anotado a un commit en especifico.
+git push origin [ tag/numero version ] = Permite enviar una etiqueta especifica  nuestro repositorio remoto.
+git push origin --tags                 = Permite enviar todos los tags existentes a nuestro repositiorio remoto.
+
+/////////////// FUSIONADOS ///////////////
+ 
+git merge         = Funciona las ramas
+git merge --abort = aborta el proceso de fusionado, se utiliza especialmente cuando se genera un conflicto en git.
+
+/////////////// RAMAS DE SEGUIMIENTO ///////////////
+
+git checkout -b [rama] [nombreremoto]/[rama] = Crea una rama de seguimiento la cual está atenta a todos los posibles 
+                                               cambios que succedan en la rama remota, tiene acceso a las funcionalidades 
+                                               de pull y fetch, push.
+
+
+
+
+
+
+
+
+
+
+
+
