@@ -31,4 +31,7 @@ document.addEventListener("DOMContentLoaded",() => {
 
     // Cambo 1
     // alert("Hola carnal");
+
+    // Cambio 2
+    console.log("Estoy en Modificandoheader");
 });
