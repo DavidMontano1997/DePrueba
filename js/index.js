@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded",() => {
         // Cambio g2
         const visitor = $OBJ_formulary.GetInformationUser("DavidMG1997");
         console.log(visitor);
+        console.log("Hola desde Modificandoheader!!!");
     });
 
     // Cambo 1
