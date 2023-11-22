@@ -30,5 +30,5 @@ document.addEventListener("DOMContentLoaded",() => {
     });
 
     // Cambo 1
-    alert("Hola carnal");
+    // alert("Hola carnal");
 });
