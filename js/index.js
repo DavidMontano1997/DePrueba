@@ -24,4 +24,7 @@ document.addEventListener("DOMContentLoaded",() => {
 
         $OBJ_formulary.collecting_information(e); // Validando formulario.
     });
+
+    // Cambo 1
+    alert("Hola carnal");
 });
