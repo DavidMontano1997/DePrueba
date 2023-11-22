@@ -33,12 +33,6 @@ document.addEventListener("DOMContentLoaded",() => {
     // Cambo 1
     // alert("Hola carnal");
 
-    // Cambio 2
-    console.log("Estoy en Modificandoheader");
-
-    // 
-    console.log("Modificandoheader 3");
-
-    // cambio 4
-    console.log("Modificandoheader 4");
+    // cambio en master
+    console.log("estoy en master");
 });
