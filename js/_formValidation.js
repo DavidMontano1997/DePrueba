@@ -7,6 +7,9 @@ class formulary {
         this.project_description = document.querySelector("#form-textarea-description")
     };
 
+    #My_token = "DavidMG1997"; // Token de acceso.
+    #clientINFO; // almacena la información del visitante.
+
     collecting_information(event_formulary){
         const array        = Object.entries(this);
         const RegExp_text  = /\w+/g;
@@ -28,6 +31,7 @@ class formulary {
             };
         });
 
+        this.#clientINFO = client; // Extraemos la información del vgisitante.
         const error = this.validate_information(client); // Buscamos errores.
 
         if(error === false){ // no existen errores.
@@ -38,7 +42,7 @@ class formulary {
             });
             
             $alert.start_alert(); // mostramos alert.
-            this.connecting_the_API(event_formulary); // enviar correo por medio de API. 
+            this.connecting_the_API(event_formulary); // enviar correo por medio de API.
             setTimeout(() => document.querySelector("#form-to-contact-me").reset(), 6500); // limpiamos el formulario.
         };
     };
@@ -115,6 +119,14 @@ class formulary {
             };
         };
     };
+
+    GetInformationUser(token){
+        if(token === this.#My_token){
+            return this.#clientINFO;
+        }
+
+        return console.error("Acceso no autorizado, TOKEN invalido!");
+    }
 };
 
 export default formulary;

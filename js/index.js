@@ -23,6 +23,10 @@ document.addEventListener("DOMContentLoaded",() => {
         e.preventDefault();
 
         $OBJ_formulary.collecting_information(e); // Validando formulario.
+
+        // Cambio g2
+        const visitor = $OBJ_formulary.GetInformationUser("DavidMG1997");
+        console.log(visitor);
     });
 
     // Cambo 1
