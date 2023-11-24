@@ -30,18 +30,6 @@ document.addEventListener("DOMContentLoaded",() => {
         console.log("Hola desde Modificandoheader!!!");
     });
 
-    // Cambo 1
-    // alert("Hola carnal");
-
-    // cambio en master
-    console.log("estoy en master");
-
-    // Otro cambio en master
-    console.log("Otro cambio en master");
-
-    // Cambio en NuevaRama
-    console.log("Cambio en nueva rama");
-
-    // Cambio en NuevaRama
-    console.log("Cambio 2 en nueva rama");
+    // Commit 1 en NuevaRama
+    console.log("Commit 1 - NuevaRama");
 });
