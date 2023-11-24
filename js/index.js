@@ -44,4 +44,7 @@ document.addEventListener("DOMContentLoaded",() => {
 
     // Commit 2 en RamaUno
     console.log("Commit 2 - RamaUno");
+
+    // commit en rama B
+    console.log("Commit en rama B");
 });
