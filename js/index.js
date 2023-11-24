@@ -41,4 +41,7 @@ document.addEventListener("DOMContentLoaded",() => {
 
     // Cambio en NuevaRama
     console.log("Cambio en nueva rama");
+
+    // Cambio en NuevaRama
+    console.log("Cambio 2 en nueva rama");
 });
