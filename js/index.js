@@ -35,4 +35,7 @@ document.addEventListener("DOMContentLoaded",() => {
 
     // Cambio 2
     console.log("Estoy en Modificandoheader");
+
+    // 
+    console.log("Modificandoheader 3");
 });
