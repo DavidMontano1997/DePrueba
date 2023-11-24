@@ -31,6 +31,9 @@ document.addEventListener("DOMContentLoaded",() => {
 
         // Commit A - Rama master
         console.log("Commit A - Rama master");
+
+        // Commit B - Rama master
+        console.log("Commit B - Rama master");
     });
 
     // Commit 1 en NuevaRama
