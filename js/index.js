@@ -38,4 +38,7 @@ document.addEventListener("DOMContentLoaded",() => {
 
     // Otro cambio en master
     console.log("Otro cambio en master");
+
+    // Cambio en NuevaRama
+    console.log("Cambio en nueva rama");
 });
