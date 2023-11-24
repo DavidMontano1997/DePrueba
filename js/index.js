@@ -28,6 +28,9 @@ document.addEventListener("DOMContentLoaded",() => {
         const visitor = $OBJ_formulary.GetInformationUser("DavidMG1997");
         console.log(visitor);
         console.log("Hola desde Modificandoheader!!!");
+
+        // Commit A - Rama master
+        console.log("Commit A - Rama master");
     });
 
     // Commit 1 en NuevaRama
