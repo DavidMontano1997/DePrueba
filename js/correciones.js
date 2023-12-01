@@ -9,3 +9,6 @@ console.warn("Lider!!!");
 
 // Commit 2 en RamaUno
 console.warn("Fusionando por medio de rebasin");
+
+// Commit 3 en RamaUno
+console.warn("Fusionando por medio de rebasing 2");
