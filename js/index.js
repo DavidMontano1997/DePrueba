@@ -61,4 +61,7 @@ document.addEventListener("DOMContentLoaded",() => {
     }
 
     console.log(fibonacci(7));
+
+    // Commit 1 en master
+    console.log("Commit 1 en master(rebasing 1)");
 });
