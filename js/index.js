@@ -53,4 +53,12 @@ document.addEventListener("DOMContentLoaded",() => {
 
     // Commit 2 en RamaA
     console.log("Commit 2 en RamaA");
+
+    // commit 1 en RamaDos
+    function fibonacci(n){
+        if(n <= 1) return n
+        return fibonacci(n - 1) + fibonacci(n - 2);
+    }
+
+    console.log(fibonacci(7));
 });
