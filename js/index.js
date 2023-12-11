@@ -19,6 +19,9 @@ document.addEventListener("DOMContentLoaded",() => {
     const $OBJ_formulary      = new formulary();
     const $form_to_contact_me = document.querySelector("#form-to-contact-me");
 
+    // commit 1 - Rama master
+    console.log("Commit 1 - Rama master");
+
     $form_to_contact_me.addEventListener("submit",(e) => {
         e.preventDefault();
 
