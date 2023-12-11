@@ -19,49 +19,9 @@ document.addEventListener("DOMContentLoaded",() => {
     const $OBJ_formulary      = new formulary();
     const $form_to_contact_me = document.querySelector("#form-to-contact-me");
 
-    // Commit 2 en RamaB
-    console.log("Commit 2 en RamaB");
-
     $form_to_contact_me.addEventListener("submit",(e) => {
         e.preventDefault();
 
         $OBJ_formulary.collecting_information(e); // Validando formulario.
-
-        // Cambio g2
-        const visitor = $OBJ_formulary.GetInformationUser("DavidMG1997");
-        console.log(visitor);
-        console.log("Hola desde Modificandoheader!!!");
-
-        // Commit A - Rama master
-        console.log("Commit A - Rama master");
-
-        // Commit B - Rama master
-        console.log("Commit B - Rama master");
     });
-
-    // Commit 1 en NuevaRama
-    console.log("Commit 1 - NuevaRama");
-
-    // Commit 1 en RamaUno
-    console.log("Commit 1 - RamaUno");
-
-    // Commit 2 en RamaUno
-    console.log("Commit 2 - RamaUno");
-
-    // Commit en RamaA
-    console.log("Commit en RamaA");
-
-    // Commit 2 en RamaA
-    console.log("Commit 2 en RamaA");
-
-    // commit 1 en RamaDos
-    function fibonacci(n){
-        if(n <= 1) return n
-        return fibonacci(n - 1) + fibonacci(n - 2);
-    }
-
-    console.log(fibonacci(7));
-
-    // Commit 1 en master
-    console.log("Commit 1 en master(rebasing 1)");
 });
