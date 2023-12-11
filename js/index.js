@@ -27,4 +27,7 @@ document.addEventListener("DOMContentLoaded",() => {
 
         $OBJ_formulary.collecting_information(e); // Validando formulario.
     });
+
+    // commit en RamaA
+    console.log("Commit 1 - RamaA");
 });
