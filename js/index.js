@@ -33,4 +33,7 @@ document.addEventListener("DOMContentLoaded",() => {
 
     // commit en RamaA
     console.log("Commit 1 - RamaA");
+
+    // Commit en RamaA
+    console.log("Commit 2 - RamaA");
 });
