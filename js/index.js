@@ -22,6 +22,9 @@ document.addEventListener("DOMContentLoaded",() => {
     // commit 1 - Rama master
     console.log("Commit 1 - Rama master");
 
+    // Commit 2 - Rama master
+    console.log("Commmit 2 - Rama master");
+
     $form_to_contact_me.addEventListener("submit",(e) => {
         e.preventDefault();
 
