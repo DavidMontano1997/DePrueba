@@ -19,21 +19,12 @@ document.addEventListener("DOMContentLoaded",() => {
     const $OBJ_formulary      = new formulary();
     const $form_to_contact_me = document.querySelector("#form-to-contact-me");
 
-    // commit 1 - Rama master
-    console.log("Commit 1 - Rama master");
-
-    // Commit 2 - Rama master
-    console.log("Commmit 2 - Rama master");
-
     $form_to_contact_me.addEventListener("submit",(e) => {
         e.preventDefault();
 
         $OBJ_formulary.collecting_information(e); // Validando formulario.
     });
 
-    // commit en RamaA
-    console.log("Commit 1 - RamaA");
-
-    // Commit en RamaA
-    console.log("Commit 2 - RamaA");
+    // Commit 1 en master
+    console.log("Commit 1 en master");
 });
