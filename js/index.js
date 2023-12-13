@@ -5,6 +5,9 @@ import formulary from  "./_formValidation.js";
 import  "./correciones.js"; // documento a eliminar
 
 document.addEventListener("DOMContentLoaded",() => {
+    // Commit 1 en feature
+    console.log("Commit 1 en feature");
+    
     const $typewriter = typewriter(); // Efecto maquina de escribir en el header.
     
     // Barra de navegacion.
