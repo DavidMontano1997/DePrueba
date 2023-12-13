@@ -27,4 +27,7 @@ document.addEventListener("DOMContentLoaded",() => {
 
     // Commit 1 en master
     console.log("Commit 1 en master");
+
+    // Commit 2 en master
+    console.log("Commit 2 en master");
 });
