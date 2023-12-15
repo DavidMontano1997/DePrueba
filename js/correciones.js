@@ -14,4 +14,7 @@ console.warn("Fusionando por medio de rebasin");
 console.warn("Fusionando por medio de rebasing 2");
 
 // Ejemplo 3 - Commit en rama featureDOS
-console.warn("Ejemplo 3 - Commit en rama featureDOS");
+console.warn ("Ejemplo 3 - Commit en rama featureDOS");
+
+// Ejemplo 3 - Otro commit en featureDOS
+console.log("Ejemplo 3 - Otro commit en featureDOS");
