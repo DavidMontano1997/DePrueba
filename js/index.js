@@ -4,6 +4,9 @@ import OBJ_Project from "./_Proyectos.js";
 import formulary from  "./_formValidation.js";
 import  "./correciones.js"; // documento a eliminar
 
+// Commit en master
+console.log("Commit en master");
+
 document.addEventListener("DOMContentLoaded",() => {
     // Commit 1 en feature
     console.log("Commit 1 en feature");
