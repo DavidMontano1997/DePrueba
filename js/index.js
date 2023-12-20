@@ -4,13 +4,7 @@ import OBJ_Project from "./_Proyectos.js";
 import formulary from  "./_formValidation.js";
 import  "./correciones.js"; // documento a eliminar
 
-// Commit en master
-console.log("Commit en master");
-
-document.addEventListener("DOMContentLoaded",() => {
-    // Commit 1 en feature
-    console.log("Commit 1 en feature");
-    
+document.addEventListener("DOMContentLoaded",() => {    
     const $typewriter = typewriter(); // Efecto maquina de escribir en el header.
     
     // Barra de navegacion.
@@ -30,19 +24,4 @@ document.addEventListener("DOMContentLoaded",() => {
 
         $OBJ_formulary.collecting_information(e); // Validando formulario.
     });
-
-    // Commit 1 en master
-    console.log("Commit 1 en master");
-
-    // Commit 2 en master
-    console.log("Commit 2 en master");
-
-    // Ejemplo 3 - Commit en master
-    console.log("Ejemplo 3 - commit en  master");
-
-    // Commit en MI_rama
-    console.log("Commit en MI_rama");
-
-    // Commit en OTRA_rama
-    console.log("Commit en OTRA_rama");
 });
