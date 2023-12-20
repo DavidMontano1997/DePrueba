@@ -42,4 +42,7 @@ document.addEventListener("DOMContentLoaded",() => {
 
     // Commit en MI_rama
     console.log("Commit en MI_rama");
+
+    // Commit en OTRA_rama
+    console.log("Commit en OTRA_rama");
 });
