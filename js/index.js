@@ -23,5 +23,8 @@ document.addEventListener("DOMContentLoaded",() => {
         e.preventDefault();
 
         $OBJ_formulary.collecting_information(e); // Validando formulario.
+
+        // Commit 1 en master
+        console.log("Commit 1 en master");
     });
 });
