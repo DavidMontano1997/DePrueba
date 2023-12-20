@@ -39,4 +39,7 @@ document.addEventListener("DOMContentLoaded",() => {
 
     // Ejemplo 3 - Commit en master
     console.log("Ejemplo 3 - commit en  master");
+
+    // Commit en MI_rama
+    console.log("Commit en MI_rama");
 });
