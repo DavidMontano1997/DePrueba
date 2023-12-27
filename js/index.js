@@ -33,4 +33,7 @@ document.addEventListener("DOMContentLoaded",() => {
 
     // Commit 1 en rama_B
     console.log("Commit 1 en rama_B");
+
+    // commit 1 en master
+    console.log("Commit 1 en master");
 });
