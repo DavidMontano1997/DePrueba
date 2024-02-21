@@ -23,17 +23,5 @@ document.addEventListener("DOMContentLoaded",() => {
         e.preventDefault();
 
         $OBJ_formulary.collecting_information(e); // Validando formulario.
-
-        // Commit 1 en master
-        console.log("Commit 1 en master");
     });
-
-    // Commit 1 en rama_A
-    console.log("Commit 1 en rama_A");
-
-    // Commit 1 en rama_B
-    console.log("Commit 1 en rama_B");
-
-    // commit 1 en master
-    console.log("Commit 1 en master");
 });
