@@ -21,3 +21,6 @@ console.log("Ejemplo 3 - Otro commit en featureDOS");
 
 // Commit en rama_1
 console.log("Commit 1 en rama_1");
+
+// commit en feactureX2
+console.log("Commit 1 - feactureX2");
