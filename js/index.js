@@ -7,7 +7,6 @@ import  "./correciones.js"; // documento a eliminar
 document.addEventListener("DOMContentLoaded",() => {    
     const $typewriter = typewriter(); // Efecto maquina de escribir en el header.
     
-    FnSaludando();
     // Barra de navegacion.
     const $Navbar = new OBJ_NavBar(); 
     $Navbar.PositionFixed_And_HidenBarYellow();
@@ -26,7 +25,3 @@ document.addEventListener("DOMContentLoaded",() => {
         $OBJ_formulary.collecting_information(e); // Validando formulario.
     });
 });
-
-function FnSaludando(){
-    console.log("Hola erick");
-}
