@@ -165,5 +165,23 @@ Existen 5 tipos de alerta:
 > [!CAUTION]
 > Asesora sobre riesgos o resultados negativos de determinadas acciones.
 
+# CREANDO DIAGRAMAS
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+
+
+
+
+
+
+
+
+
 
 
