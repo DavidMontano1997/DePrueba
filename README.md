@@ -175,6 +175,23 @@ graph TD;
     C-->D;
 ```
 
+# Creando tabla html
+
+<table>
+    <tr>
+        <th>columna 1</th>
+        <th>columna 2</th>
+        <th>columna 3</th>
+        <th>columna 4</th>
+    </tr>
+    <tr>
+        <td>texto</td>
+        <td>texto</td>
+        <td>texto</td>
+        <td>texto</td>
+    </tr>
+</table>
+
 
 
 
