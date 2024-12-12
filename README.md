@@ -40,7 +40,7 @@ Esta conformado por los siguientes modulos:
     };
     ```
 
-4. <a name="hola"></a>Archivos de Registro de Eventos (ejemplo:  `home.js` ) : Cada archivo registra eventos específicos de la vista correspondiente utilizando el sistema central de eventos.
+4. <a name="registro-de-eventos"></a>Archivos de Registro de Eventos (ejemplo:  `home.js` ) : Cada archivo registra eventos específicos de la vista correspondiente utilizando el sistema central de eventos.
 
     ```
     // Dependecias
@@ -76,7 +76,7 @@ Esta conformado por los siguientes modulos:
 
 En la fichero central del sistema [Event_system.js](../js/modules/Event_system/Event_system.js) , Se define una propiedad  `#categoryIndex`  la cuál es privadad y de tipo **Array**, donde se deben definir las diferentes vista/categorías de forma manual, para la agrupación de eventos. 
 
-Una vez registrada la categoría se puede pasar a [registrar eventos](#hola).
+Una vez registrada la categoría se puede pasar a [registrar eventos](#registro-de-eventos).
 
 ```js
 // Categorias validas para el registro de eventos.
